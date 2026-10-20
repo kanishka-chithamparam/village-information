@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thiruvizha Village Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://via.placeholder.com/56" alt="village logo" class="logo">
+        <div>
+          <h1>Thiruvizha</h1>
+          <p class="tag">A proud village in Salem, Tamil Nadu</p>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Welcome to Thiruvizha</h2>
+          <p>Discover local news, services, events, and resources for our community in Salem district.</p>
+          <div class="hero-cta">
+            <a href="#services" class="btn primary">Explore Services</a>
+            <a href="#contact" class="btn ghost">Get Involved</a>
+          </div>
+          <ul class="quick-facts">
+            <li><strong>Population:</strong> 3,200</li>
+            <li><strong>Gram Panchayat:</strong> Yes</li>
+            <li><strong>Nearest City:</strong> Salem — 25 km</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <div class="stats">
+            <div><span class="num" data-target="12">0</span><p>Schools</p></div>
+            <div><span class="num" data-target="3">0</span><p>Primary Health Centers</p></div>
+            <div><span class="num" data-target="85">0</span><p>Acres of farmland</p></div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1582719478250-48f2b2fa6d1b?q=80&w=800&auto=format&fit=crop" alt="village view" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>About Thiruvizha</h3>
+      <p class="lead">Thiruvizha is a tranquil village known for its agriculture, handloom weaving and yearly temple festival.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h4>History</h4>
+          <p>Founded centuries ago, the village has a strong cultural heritage and community-driven governance.</p>
+        </article>
+        <article class="card">
+          <h4>Economy</h4>
+          <p>Most families rely on farming and weaving, with small businesses in the local market.</p>
+        </article>
+        <article class="card">
+          <h4>Transport</h4>
+          <p>Regular buses connect to Salem; local roads are well maintained with easy access to the highway.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section alt-bg">
+      <div class="container">
+        <h3>Services & Resources</h3>
+        <div class="services-grid">
+          <div class="service">
+            <h4>Health Center</h4>
+            <p>Open weekdays, vaccination drives and maternal health services available.</p>
+          </div>
+          <div class="service">
+            <h4>Education Support</h4>
+            <p>After-school tuition programs and digital learning center for students.</p>
+          </div>
+          <div class="service">
+            <h4>Agriculture Help</h4>
+            <p>Soil testing, subsidised seeds and seasonal workshops for farmers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section container">
+      <h3>Gallery</h3>
+      <div class="gallery-grid" id="galleryGrid">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop" alt="field">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop" alt="market">
+        <img src="https://images.unsplash.com/photo-1514512364185-1d7a7d9a9c1b?q=80&w=800&auto=format&fit=crop" alt="temple">
+      </div>
+    </section>
+
+    <section id="events" class="section alt-bg container">
+      <h3>Upcoming Events</h3>
+      <ul class="events-list" id="eventsList">
+        <li>
+          <div class="event-date">12 Aug 2026</div>
+          <div class="event-info"><strong>Harvest Festival</strong> — Music, food and local crafts.</div>
+        </li>
+        <li>
+          <div class="event-date">05 Sep 2026</div>
+          <div class="event-info"><strong>Health Camp</strong> — Free checkups at the PHC.</div>
+        </li>
+      </ul>
+      <button class="btn primary" id="loadMore">Load more</button>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contact & Feedback</h3>
+      <p class="lead">Reach the Gram Panchayat office or send feedback using the form below.</p>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" autocomplete="off">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Email" required>
+          <textarea id="message" placeholder="Message" rows="4" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send</button>
+            <button type="button" class="btn ghost" id="clearBtn">Clear</button>
+          </div>
+        </form>
+        <div class="contact-card">
+          <h4>Gram Panchayat Office</h4>
+          <p>Address: Village Road, Thiruvizha, Salem, Tamil Nadu</p>
+          <p>Phone: +91 98765 43210</p>
+          <div class="map-placeholder">Map coming soon</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Thiruvizha Village Portal</p>
+      <div class="socials">
+        <a href="#" aria-label="facebook">f</a>
+        <a href="#" aria-label="twitter">t</a>
+        <a href="#" aria-label="instagram">i</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
